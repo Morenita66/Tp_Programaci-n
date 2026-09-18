@@ -16,7 +16,7 @@ namespace dao_library
             return player;
         }
 
-        public Player? ReadPlayerById(int id)
+        public Player? ReadPlayerById(long id)
         {
             return MockDatabase.Players.FirstOrDefault(s => s.Id == id);
         }
@@ -38,7 +38,7 @@ namespace dao_library
             return false;
         }
 
-        public bool DeletePlayer(int id)
+        public bool DeletePlayer(long id)
         {
             var playerToDelete = ReadPlayerById(id);
 

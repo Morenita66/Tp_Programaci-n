@@ -8,12 +8,19 @@ namespace entity_library
 {
     public class Team
     {
+        private long id;
         private string name = "";
         private string category = "";
 
         private List<Player> player = new List<Player>();
         private List<Trainer> trainer = new List<Trainer>();
 
+
+        public long Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string Name
         {
             get { return name; }
